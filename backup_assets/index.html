@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idusara Chathum | IT Undergraduate & Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader Screen -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-scanner"></div>
+            <div class="preloader-logo">
+                <span class="logo-txt">IDUSARA CHATHUM</span>
+            </div>
+            <div class="preloader-bar-container">
+                <div class="preloader-bar"></div>
+            </div>
+            <div class="preloader-status">SYSTEM BOOTING... <span class="preloader-percent">0%</span></div>
+            <div class="preloader-console-log"></div>
+        </div>
+    </div>
+
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo-wrapper">
+                    <img src="IMG.jpeg" alt="Idusara Chathum" class="nav-profile-image">
+                    <span class="logo">IDUSARA CHATHUM</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#objective">Objective</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="sound-toggle" class="control-btn" title="Toggle Sound" aria-label="Toggle Sound">
+                        <svg class="sound-on" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4L9.91 6.09L12 8.18M18.5 12C18.5 9.75 17.2 7.81 15.33 6.89L14.07 8.15C15.19 8.84 16 10.3 16 12C16 13.7 15.19 15.16 14.07 15.85L15.33 17.11C17.2 16.19 18.5 14.25 18.5 12M14 3.23V5.29C17.3 6.14 19.8 9.17 19.8 12.77C19.8 16.37 17.3 19.4 14 20.25V22.31C18.5 21.41 21.8 17.48 21.8 12.77C21.8 8.06 18.5 4.13 14 3.23M3 9V15H7L12 20V4L7 9H3Z"/>
+                        </svg>
+                        <svg class="sound-off hidden" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4L9.91 6.09L12 8.18M4.27 3L3 4.27L7.73 9H3V15H7L12 20V13.27L16.25 17.52C15.58 18.04 14.83 18.42 14 18.6V20.66C15.38 20.43 16.63 19.78 17.67 18.94L20.73 22L22 20.73L4.27 3M19.8 12.77C19.8 14.27 19.34 15.65 18.57 16.82L20.03 18.28C21.14 16.71 21.8 14.81 21.8 12.77M12 4L9.91 6.09L12 8.18M16.5 12C16.5 10.3 15.69 8.84 14.57 8.15L15.83 6.89C17.7 7.81 19 9.75 19 12C19 13.06 18.67 14.05 18.1 14.87L16.64 13.41C16.55 12.96 16.5 12.49 16.5 12M14 8.23L12 10.23V5.88L14 7.88" />
+                        </svg>
+                    </button>
+                    <button id="terminal-trigger" class="control-btn" title="Open Console (/) or (Ctrl+K)" aria-label="Open Console">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20,19H4A2,2 0 0,1 2,17V7A2,2 0 0,1 4,5H20A2,2 0 0,1 22,7V17A2,2 0 0,1 20,19M20,7H4V17H20V7M6,15V13H8V15H6M10,15V13H18V15H10M6,11V9H10V11H6M12,11V9H18V11H12Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Floating Neon Blur Blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <div class="hero-subtitle-wrapper">
+                        <span class="hero-subtitle">Welcome to my portfolio</span>
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="name-line">Idusara Chathum</span>
+                        <span class="name-line">Wishwanath</span>
+                    </h1>
+                    <p class="hero-title">IT Undergraduate & Web Developer</p>
+                    <p class="hero-tagline">
+                        Crafting elegant digital experiences with clean code and modern design.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="White simple Sales Representative Cv Resume (1).pdf" class="btn btn-primary" download>Download Resume</a>
+                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/idusara-chathum-03075a320" target="_blank" class="social-icon" title="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.725-2.004 1.425-.103.25-.129.599-.129.949v5.431h-3.523s.047-8.81 0-9.728h3.523v1.378c.43-.664 1.198-1.609 2.920-1.609 2.134 0 3.733 1.395 3.733 4.396v5.563zM5.337 9.433c-1.144 0-1.915-.758-1.915-1.707 0-.955.768-1.708 1.959-1.708 1.188 0 1.914.753 1.939 1.708 0 .949-.751 1.707-1.983 1.707zm1.946 11.019H3.393V9.724h3.89v10.728zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Idusara" target="_blank" class="social-icon" title="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-image-container">
+                        <div class="avatar-ring-outer"></div>
+                        <div class="avatar-ring-inner"></div>
+                        <img src="IMG.jpeg" alt="Idusara Chathum Wishwanath" class="profile-image">
+                        
+                        <!-- Orbiting Badges -->
+                        <div class="floating-badge badge-kotlin" title="Kotlin">
+                            <span class="badge-icon">Kotlin</span>
+                        </div>
+                        <div class="floating-badge badge-react" title="React">
+                            <span class="badge-icon">React</span>
+                        </div>
+                        <div class="floating-badge badge-java" title="Java">
+                            <span class="badge-icon">Java</span>
+                        </div>
+                        <div class="floating-badge badge-db" title="MySQL">
+                            <span class="badge-icon">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Mouse Indicator -->
+        <div class="scroll-indicator-container">
+            <a href="#objective" class="scroll-mouse-btn" aria-label="Scroll Down">
+                <span class="mouse-wheel"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="objective" class="objective">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-wrapper">
+                <!-- Left: Pillars -->
+                <div class="about-pillars">
+                    <!-- Pillar 1 -->
+                    <div class="pillar-card">
+                        <div class="pillar-icon-wrapper">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                                <line x1="14" y1="2" x2="10" y2="22"></line>
+                            </svg>
+                        </div>
+                        <div class="pillar-info">
+                            <div class="pillar-header">
+                                <h3 class="pillar-title">Technical Architecture</h3>
+                                <span class="pillar-percent">85%</span>
+                            </div>
+                            <div class="about-progress-container">
+                                <div class="about-progress-bar" data-progress="85"></div>
+                            </div>
+                            <p class="pillar-text">Writing clean, modular, and optimized code following best practices.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pillar 2 -->
+                    <div class="pillar-card">
+                        <div class="pillar-icon-wrapper">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="18" cy="18" r="3"></circle>
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="18" cy="6" r="3"></circle>
+                                <line x1="6" y1="9" x2="6" y2="21"></line>
+                                <path d="M9 18h9"></path>
+                                <path d="M12 6H9"></path>
+                            </svg>
+                        </div>
+                        <div class="pillar-info">
+                            <div class="pillar-header">
+                                <h3 class="pillar-title">Analytical Logic</h3>
+                                <span class="pillar-percent">90%</span>
+                            </div>
+                            <div class="about-progress-container">
+                                <div class="about-progress-bar" data-progress="90"></div>
+                            </div>
+                            <p class="pillar-text">Breaking down complex business issues into structured step solutions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="pillar-card">
+                        <div class="pillar-icon-wrapper">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="pillar-info">
+                            <div class="pillar-header">
+                                <h3 class="pillar-title">Collaboration</h3>
+                                <span class="pillar-percent">95%</span>
+                            </div>
+                            <div class="about-progress-container">
+                                <div class="about-progress-bar" data-progress="95"></div>
+                            </div>
+                            <p class="pillar-text">Working transparently in team cycles with high collective integrity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: IDE Code Window -->
+                <div class="about-code-window">
+                    <div class="code-header">
+                        <div class="code-buttons">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-tabs">
+                            <button class="code-tab active" data-file="objective.json">objective.json</button>
+                            <button class="code-tab" data-file="philosophy.js">philosophy.js</button>
+                            <button class="code-tab" data-file="system.sh">system.sh</button>
+                        </div>
+                    </div>
+                    <div class="code-editor">
+                        <div class="line-numbers">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                        <div class="code-content" id="editor-content">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Information Section -->
+    <section class="personal-info">
+        <div class="container">
+            <h2 class="section-title">Personal Information</h2>
+            
+            <div class="personal-dashboard-card">
+                <!-- Left side: Developer ID Badge -->
+                <div class="personal-badge-side">
+                    <div class="badge-header">
+                        <span class="status-indicator online"></span>
+                        <span class="badge-title">SYSTEM PROFILE</span>
+                    </div>
+                    <div class="badge-avatar-container">
+                        <div class="avatar-ring"></div>
+                        <img src="IMG.jpeg" alt="Idusara Chathum" class="badge-avatar">
+                    </div>
+                    <h3 class="badge-name">IDUSARA CHATHUM</h3>
+                    <span class="badge-role">Associate IT Developer</span>
+                    
+                    <div class="badge-meta">
+                        <div class="meta-row">
+                            <span class="meta-key">CLASS:</span>
+                            <span class="meta-val">UNDERGRADUATE</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">STATUS:</span>
+                            <span class="meta-val glowing-text">ONLINE</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">STACK:</span>
+                            <span class="meta-val">JAVA / JS / KOTLIN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right side: Parameter Details Grid -->
+                <div class="personal-details-side">
+                    <div class="details-grid">
+                        
+                        <!-- Nationality -->
+                        <div class="details-card">
+                            <div class="details-icon-wrapper">
+                                <svg class="details-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                            </div>
+                            <div class="details-info">
+                                <span class="details-label">Nationality</span>
+                                <span class="details-value">Sri Lankan</span>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="details-card">
+                            <div class="details-icon-wrapper">
+                                <svg class="details-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="details-info">
+                                <span class="details-label">Location</span>
+                                <span class="details-value">Kegalle, Sri Lanka</span>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="details-card">
+                            <div class="details-icon-wrapper">
+                                <svg class="details-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="details-info">
+                                <span class="details-label">Phone</span>
+                                <a href="tel:+94761225672" class="details-value">+94 76 122 5672</a>
+                            </div>
+                        </div>
+
+                        <!-- Date of Birth -->
+                        <div class="details-card">
+                            <div class="details-icon-wrapper">
+                                <svg class="details-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div class="details-info">
+                                <span class="details-label">Date of Birth</span>
+                                <span class="details-value">August 31, 2003</span>
+                            </div>
+                        </div>
+
+                        <!-- NIC Number -->
+                        <div class="details-card">
+                            <div class="details-icon-wrapper">
+                                <svg class="details-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
+                                    <line x1="7" y1="8" x2="17" y2="8"></line>
+                                    <line x1="7" y1="12" x2="13" y2="12"></line>
+                                    <circle cx="17" cy="13" r="1.5"></circle>
+                                </svg>
+                            </div>
+                            <div class="details-info">
+                                <span class="details-label">NIC Number</span>
+                                <span class="details-value">200324412402</span>
+                            </div>
+                        </div>
+
+                        <!-- Religion -->
+                        <div class="details-card">
+                            <div class="details-icon-wrapper">
+                                <svg class="details-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div class="details-info">
+                                <span class="details-label">Religion</span>
+                                <span class="details-value">Buddhist</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <!-- SLIIT B.Sc. IT -->
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-icon-dot text-glow-cyan" id="edu-dot-sliit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="timeline-svg-icon">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                        </svg>
+                        <span class="pulsating-ring"></span>
+                    </div>
+                    <div class="timeline-date">Current</div>
+                    <div class="timeline-content" id="edu-card-sliit">
+                        <h3 class="timeline-title">B.Sc. Hons in Information Technology</h3>
+                        <h4 class="timeline-subtitle">Sri Lanka Institute of Information Technology (SLIIT)</h4>
+                        <p class="timeline-description">
+                            Comprehensive curriculum covering software development, database management,
+                            web technologies, and mobile application development. Eagerly pursuing technical specialization.
+                        </p>
+                        <div class="timeline-toggle-wrapper">
+                            <span class="timeline-expand-hint">Click to toggle modules & details</span>
+                            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="timeline-details-wrapper">
+                            <div class="timeline-details-content">
+                                <div class="details-divider"></div>
+                                <h5 class="details-subtitle">Core Course Modules</h5>
+                                <div class="modules-grid">
+                                    <div class="module-badge">
+                                        <span class="module-icon">💻</span>
+                                        <span class="module-name">Software Engineering</span>
+                                    </div>
+                                    <div class="module-badge">
+                                        <span class="module-icon">☕</span>
+                                        <span class="module-name">Object Oriented Programming</span>
+                                    </div>
+                                    <div class="module-badge">
+                                        <span class="module-icon">🗄️</span>
+                                        <span class="module-name">Database Systems (MySQL)</span>
+                                    </div>
+                                    <div class="module-badge">
+                                        <span class="module-icon">🌐</span>
+                                        <span class="module-name">Web Application Dev</span>
+                                    </div>
+                                    <div class="module-badge">
+                                        <span class="module-icon">📱</span>
+                                        <span class="module-name">Mobile App Development</span>
+                                    </div>
+                                    <div class="module-badge">
+                                        <span class="module-icon">📡</span>
+                                        <span class="module-name">Computer Networks</span>
+                                    </div>
+                                </div>
+                                <div class="details-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Status</span>
+                                        <span class="meta-value pulse-green">Active Study</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Location</span>
+                                        <span class="meta-value">Malabe, Sri Lanka</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- G.C.E. Advanced Level -->
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-icon-dot text-glow-pink" id="edu-dot-al">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="timeline-svg-icon">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content" id="edu-card-al">
+                        <h3 class="timeline-title">G.C.E. Advanced Level Examination</h3>
+                        <h4 class="timeline-subtitle">Ke/Dedigama Parakumba National School</h4>
+                        <p class="timeline-description">
+                            Advanced high school studies focusing on core subjects with strong mathematical and technical fundamentals.
+                        </p>
+                        <div class="timeline-toggle-wrapper">
+                            <span class="timeline-expand-hint">Click to toggle subjects & results</span>
+                            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="timeline-details-wrapper">
+                            <div class="timeline-details-content">
+                                <div class="details-divider"></div>
+                                <h5 class="details-subtitle">Stream: Physical Science & ICT</h5>
+                                <div class="subjects-list">
+                                    <div class="subject-row">
+                                        <span class="subject-title">Combined Mathematics</span>
+                                        <span class="subject-status">Core Logic</span>
+                                    </div>
+                                    <div class="subject-row">
+                                        <span class="subject-title">Information & Comm. Technology (ICT)</span>
+                                        <span class="subject-status">Special Interest</span>
+                                    </div>
+                                    <div class="subject-row">
+                                        <span class="subject-title">Physics</span>
+                                        <span class="subject-status">Analytical Fundamentals</span>
+                                    </div>
+                                </div>
+                                <div class="details-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Institute Type</span>
+                                        <span class="meta-value">National School</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Location</span>
+                                        <span class="meta-value">Dedigama, Sri Lanka</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- G.C.E. Ordinary Level -->
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-icon-dot text-glow-orange" id="edu-dot-ol">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="timeline-svg-icon">
+                            <circle cx="12" cy="8" r="7"/>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content" id="edu-card-ol">
+                        <h3 class="timeline-title">G.C.E. Ordinary Level Examination</h3>
+                        <h4 class="timeline-subtitle">Ke/Dedigama Parakumba National School</h4>
+                        <p class="timeline-description">
+                            Secondary educational foundation completed with outstanding results.
+                        </p>
+                        <div class="timeline-toggle-wrapper">
+                            <span class="timeline-expand-hint">Click to toggle grades & details</span>
+                            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="timeline-details-wrapper">
+                            <div class="timeline-details-content">
+                                <div class="details-divider"></div>
+                                <h5 class="details-subtitle">Academic Excellence</h5>
+                                <div class="grades-badge-wrap">
+                                    <div class="grades-distinction-badge">
+                                        <span class="badge-number">9 A</span>
+                                        <span class="badge-label">Distinctions (Straight "A"s)</span>
+                                    </div>
+                                </div>
+                                <p class="details-text-p">
+                                    Achieved the highest academic grade tier with straight "A" (Distinction) results across all core subjects including Mathematics, Science, English, and ICT.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category" id="skills-cat-languages">
+                    <h3 class="skill-category-title">
+                        <svg class="category-icon text-glow-cyan" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-progress-list">
+                        <!-- Java -->
+                        <div class="skill-progress-row" data-skill="Java" data-level="90" data-glow="java">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">☕</span> Java
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill java-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Expert / OOP Specialist</span>
+                            </div>
+                        </div>
+
+                        <!-- Kotlin -->
+                        <div class="skill-progress-row" data-skill="Kotlin" data-level="85" data-glow="kotlin">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">⚡</span> Kotlin
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill kotlin-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Advanced / Modern App Dev</span>
+                            </div>
+                        </div>
+
+                        <!-- Python -->
+                        <div class="skill-progress-row" data-skill="Python" data-level="75" data-glow="python">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">🐍</span> Python
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill python-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Proficient / Scripting & Logic</span>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="skill-progress-row" data-skill="JavaScript" data-level="80" data-glow="js">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">📜</span> JavaScript
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill js-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Advanced / Fullstack Scripting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category" id="skills-cat-web">
+                    <h3 class="skill-category-title">
+                        <svg class="category-icon text-glow-pink" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        Web Technologies
+                    </h3>
+                    <div class="skill-progress-list">
+                        <!-- HTML/CSS -->
+                        <div class="skill-progress-row" data-skill="HTML/CSS" data-level="90" data-glow="htmlcss">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">🎨</span> HTML5 / CSS3
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill htmlcss-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Expert / Semantic & Animations</span>
+                            </div>
+                        </div>
+
+                        <!-- React -->
+                        <div class="skill-progress-row" data-skill="React" data-level="80" data-glow="react">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">⚛️</span> React.js
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill react-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Advanced / SPA Architect</span>
+                            </div>
+                        </div>
+
+                        <!-- Node.js -->
+                        <div class="skill-progress-row" data-skill="Node.js" data-level="70" data-glow="node">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">🟢</span> Node.js
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill node-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Proficient / REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="skill-category" id="skills-cat-mobile">
+                    <h3 class="skill-category-title">
+                        <svg class="category-icon text-glow-orange" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                        Mobile Development
+                    </h3>
+                    <div class="skill-progress-list">
+                        <!-- Android SDK -->
+                        <div class="skill-progress-row" data-skill="Android SDK" data-level="85" data-glow="android">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">🤖</span> Android Studio & SDK
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill android-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Advanced / Native Architecture</span>
+                            </div>
+                        </div>
+
+                        <!-- Kotlin Mobile -->
+                        <div class="skill-progress-row" data-skill="Kotlin Mobile" data-level="85" data-glow="kotlin">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">⚡</span> Kotlin (Mobile)
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill kotlin-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Advanced / Jetpack Compose</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category" id="skills-cat-db">
+                    <h3 class="skill-category-title">
+                        <svg class="category-icon text-glow-cyan" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                        </svg>
+                        Databases
+                    </h3>
+                    <div class="skill-progress-list">
+                        <!-- MySQL -->
+                        <div class="skill-progress-row" data-skill="MySQL" data-level="85" data-glow="mysql">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">🐬</span> MySQL
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill mysql-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Advanced / Query Optimization & Schema</span>
+                            </div>
+                        </div>
+
+                        <!-- Firebase -->
+                        <div class="skill-progress-row" data-skill="Firebase" data-level="75" data-glow="firebase">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">🔥</span> Firebase
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill firebase-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Proficient / Firestore & Auth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category" id="skills-cat-tools">
+                    <h3 class="skill-category-title">
+                        <svg class="category-icon text-glow-pink" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" y1="21" x2="4" y2="14"></line>
+                            <line x1="4" y1="10" x2="4" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12" y2="3"></line>
+                            <line x1="20" y1="21" x2="20" y2="16"></line>
+                            <line x1="20" y1="12" x2="20" y2="3"></line>
+                            <line x1="1" y1="14" x2="7" y2="14"></line>
+                            <line x1="9" y1="8" x2="15" y2="8"></line>
+                            <line x1="17" y1="16" x2="23" y2="16"></line>
+                        </svg>
+                        Tools & Platforms
+                    </h3>
+                    <div class="skill-progress-list">
+                        <!-- Git/GitHub -->
+                        <div class="skill-progress-row" data-skill="Git" data-level="85" data-glow="git">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">🐙</span> Git & GitHub
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill git-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Advanced / Version Control & Workflows</span>
+                            </div>
+                        </div>
+
+                        <!-- IDEs -->
+                        <div class="skill-progress-row" data-skill="IDEs" data-level="90" data-glow="ide">
+                            <div class="skill-info-row">
+                                <span class="skill-name">
+                                    <span class="skill-brand-icon">🛠️</span> Android Studio & VS Code
+                                </span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar-fill ide-glow" style="width: 0%;">
+                                    <div class="skill-bar-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-footer-row">
+                                <span class="skill-level-text">Expert / Integrated Environments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Applications</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">🗺️</div>
+                    <h3 class="project-title">Online Tour Guide System</h3>
+                    <span class="project-date">June 2024 - January 2025</span>
+                    <div class="project-tech">
+                        <span class="tech-badge">JSP</span>
+                        <span class="tech-badge">Servlets</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                    <p class="project-description">
+                        A comprehensive web application designed to guide tourists through various destinations.
+                        Developed using JSP, Servlets, and MySQL with user registration and login functionality.
+                    </p>
+                    <div class="project-features">
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>User Registration & Authentication</li>
+                            <li>Login Functionality</li>
+                            <li>Displaying Tour Guide Information</li>
+                            <li>Tourist Destination Database</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary project-detail-btn" data-project="tour-guide">View Details</button>
+                </article>
+                <!-- Project 2 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">🛒</div>
+                    <h3 class="project-title">Traditional Fruits E-commerce</h3>
+                    <span class="project-date">December 2024 - July 2025</span>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                    </div>
+                    <p class="project-description">
+                        A modern e-commerce platform for traditional fruits with real-time availability tracking
+                        and user-friendly interface. Built with React, Node.js, and MongoDB.
+                    </p>
+                    <div class="project-features">
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>User Registration & Login</li>
+                            <li>Real-time Availability Check</li>
+                            <li>Product Display & Filtering</li>
+                            <li>User-friendly Interface</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary project-detail-btn" data-project="fruits-ecommerce">View Details</button>
+                </article>
+                <!-- Project 3 -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">📱</div>
+                    <h3 class="project-title">FitTrack Mobile Companion</h3>
+                    <span class="project-date">January 2025 - Present</span>
+                    <div class="project-tech">
+                        <span class="tech-badge">Kotlin</span>
+                        <span class="tech-badge">Android Studio</span>
+                        <span class="tech-badge">Firebase</span>
+                    </div>
+                    <p class="project-description">
+                        A native Android application designed to track user workouts, count steps, and monitor diet.
+                        Features sensor integration and cloud sync via Firebase.
+                    </p>
+                    <div class="project-features">
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Step Counter (Sensor Integration)</li>
+                            <li>Workout & Nutrition Logger</li>
+                            <li>Firebase Authentication & DB</li>
+                            <li>Interactive Progress Analytics</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary project-detail-btn" data-project="fittrack-mobile">View Details</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section class="soft-skills">
+        <div class="container">
+            <h2 class="section-title">Soft Skills</h2>
+            <div class="soft-skills-grid">
+                <div class="soft-skill-item">
+                    <h4>Teamwork</h4>
+                    <p>Effective collaboration in group projects and team environments</p>
+                </div>
+                <div class="soft-skill-item">
+                    <h4>Communication</h4>
+                    <p>Clear articulation of ideas and active listening</p>
+                </div>
+                <div class="soft-skill-item">
+                    <h4>Adaptability</h4>
+                    <p>Quick learner who adapts to new technologies and environments</p>
+                </div>
+                <div class="soft-skill-item">
+                    <h4>Time Management</h4>
+                    <p>Efficient project planning and deadline management</p>
+                </div>
+                <div class="soft-skill-item">
+                    <h4>Problem-Solving</h4>
+                    <p>Analytical approach to identifying and resolving issues</p>
+                </div>
+                <div class="soft-skill-item">
+                    <h4>Continuous Learning</h4>
+                    <p>Enthusiasm for acquiring new skills and knowledge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages-grid">
+                <div class="language-card">
+                    <h3>English</h3>
+                    <div class="language-level">
+                        <div class="level-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="language-card">
+                    <h3>Sinhala</h3>
+                    <div class="language-level">
+                        <div class="level-bar" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="interests">
+        <div class="container">
+            <h2 class="section-title">Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <span class="interest-icon">📱</span>
+                    <h3>Mobile App Development</h3>
+                    <p>Building innovative mobile applications for Android and iOS platforms</p>
+                </div>
+                <div class="interest-card">
+                    <span class="interest-icon">🎨</span>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and beautiful user interfaces with excellent user experiences</p>
+                </div>
+                <div class="interest-card">
+                    <span class="interest-icon">☁️</span>
+                    <h3>Cloud Computing</h3>
+                    <p>Exploring cloud platforms and scalable application architecture</p>
+                </div>
+                <div class="interest-card">
+                    <span class="interest-icon">🌐</span>
+                    <h3>Web Development</h3>
+                    <p>Creating modern, responsive, and user-friendly websites with cutting-edge technologies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="contact-name" name="name" required placeholder=" ">
+                    <label for="contact-name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="contact-email" name="email" required placeholder=" ">
+                    <label for="contact-email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="contact-message" name="message" required placeholder=" " rows="5"></textarea>
+                    <label for="contact-message">Your Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <span class="btn-text">Send Message</span>
+                    <div class="btn-loader hidden">
+                        <span class="loader-dot"></span>
+                        <span class="loader-dot"></span>
+                        <span class="loader-dot"></span>
+                    </div>
+                </button>
+                <div class="form-status hidden"></div>
+            </form>
+
+            <div class="contact-links">
+                <a href="mailto:idusarachathum@gmail.com" class="contact-link" target="_blank">
+                    <span class="contact-icon">✉️</span>
+                    <span>Primary Email</span>
+                </a>
+                <a href="mailto:idusarachathum1@gmail.com" class="contact-link" target="_blank">
+                    <span class="contact-icon">✉️</span>
+                    <span>Secondary Email</span>
+                </a>
+                <a href="https://github.com/Idusara" class="contact-link" target="_blank">
+                    <span class="contact-icon">💻</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/idusara-chathum-03075a320" class="contact-link" target="_blank">
+                    <span class="contact-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="references">
+        <div class="container">
+            <h2 class="section-title">References</h2>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <h3 class="reference-name">MR. S.M.B. Harshanath</h3>
+                    <p class="reference-title">Lecturer</p>
+                    <p class="reference-institute">Sri Lanka Institute of Information Technology (SLIIT), Malabe</p>
+                    <p class="reference-email">
+                        <strong>Email:</strong> <a href="mailto:Harshanath.s@sliit.lk">Harshanath.s@sliit.lk</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Idusara Chathum. All rights reserved. | Designed with <span class="heart">❤️</span> using HTML & CSS</p>
+        </div>
+    </footer>
+
+    <!-- Terminal CLI Overlay -->
+    <div id="terminal-overlay" class="terminal-overlay hidden">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">idusara@sliit-developer-shell:~</span>
+                <button class="terminal-close" aria-label="Close terminal">&times;</button>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-output">
+                    <div class="output-line system">Idusara Developer Command Shell v1.0.0</div>
+                    <div class="output-line system">Type 'help' to see list of available commands.</div>
+                    <div class="output-line system">--------------------------------------------------</div>
+                </div>
+                <div class="terminal-input-wrapper">
+                    <span class="terminal-prompt">guest@idusara-port:~$&nbsp;</span>
+                    <input type="text" id="terminal-input" autocomplete="off">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="project-modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <!-- Content populated dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
