@@ -907,29 +907,44 @@ section {
 .personal-dashboard-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 20px;
+  border-radius: 24px;
   display: flex;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.personal-dashboard-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at bottom right, rgba(0, 242, 254, 0.05), transparent 60%);
+  pointer-events: none;
 }
 
 .personal-badge-side {
-  background: rgba(13, 17, 30, 0.9);
-  padding: 3rem;
+  background: rgba(10, 14, 26, 0.95);
+  padding: 2.5rem 2rem;
   width: 35%;
   border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .badge-header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .status-indicator {
@@ -953,9 +968,9 @@ section {
 
 .badge-avatar-container {
   position: relative;
-  width: 130px;
-  height: 130px;
-  margin-bottom: 1.5rem;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.25rem;
 }
 
 .badge-avatar {
@@ -963,9 +978,15 @@ section {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--bg-card);
+  border: 4px solid #0a0e1a;
   position: relative;
   z-index: 2;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease;
+}
+
+.badge-avatar-container:hover .badge-avatar {
+  transform: scale(1.03);
 }
 
 .badge-avatar-container .avatar-ring {
@@ -975,24 +996,30 @@ section {
   right: -5px;
   bottom: -5px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-pink));
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-pink), var(--accent-purple));
   z-index: 1;
+  animation: spin 6s linear infinite;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
 }
 
 .badge-name {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: 0.5px;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(120deg, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .badge-role {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--accent-cyan);
-  font-weight: 600;
-  margin-bottom: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
 }
 
 .badge-meta {
@@ -1006,8 +1033,14 @@ section {
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.meta-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .meta-key {
@@ -1020,7 +1053,7 @@ section {
 }
 
 .personal-details-side {
-  padding: 3rem;
+  padding: 2.5rem 3rem;
   width: 65%;
   display: flex;
   align-items: center;
@@ -1029,55 +1062,105 @@ section {
 .details-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1.25rem;
   width: 100%;
 }
 
 .details-card {
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
   align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.details-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(0, 242, 254, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .details-icon-wrapper {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-color);
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--accent-cyan);
-  transition: var(--transition);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.05);
 }
 
-.details-card:hover .details-icon-wrapper {
-  border-color: var(--accent-cyan);
-  color: #000;
-  background: var(--accent-cyan);
-  box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+/* Unique Icon Colors for each detail card */
+.details-card:nth-child(1) .details-icon-wrapper {
+  color: var(--accent-cyan);
+  border-color: rgba(0, 242, 254, 0.15);
+  background: rgba(0, 242, 254, 0.02);
 }
+.details-card:nth-child(2) .details-icon-wrapper {
+  color: var(--accent-pink);
+  border-color: rgba(243, 85, 218, 0.15);
+  background: rgba(243, 85, 218, 0.02);
+}
+.details-card:nth-child(3) .details-icon-wrapper {
+  color: var(--accent-purple);
+  border-color: rgba(123, 47, 247, 0.15);
+  background: rgba(123, 47, 247, 0.02);
+}
+.details-card:nth-child(4) .details-icon-wrapper {
+  color: var(--accent-orange);
+  border-color: rgba(255, 159, 67, 0.15);
+  background: rgba(255, 159, 67, 0.02);
+}
+
+/* Icon Glow Hover Effects */
+.details-card:hover .details-icon-wrapper {
+  color: #000;
+  box-shadow: 0 0 15px currentColor;
+}
+.details-card:nth-child(1):hover .details-icon-wrapper { background: var(--accent-cyan); border-color: var(--accent-cyan); }
+.details-card:nth-child(2):hover .details-icon-wrapper { background: var(--accent-pink); border-color: var(--accent-pink); }
+.details-card:nth-child(3):hover .details-icon-wrapper { background: var(--accent-purple); border-color: var(--accent-purple); }
+.details-card:nth-child(4):hover .details-icon-wrapper { background: var(--accent-orange); border-color: var(--accent-orange); }
 
 .details-info {
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.details-card:hover .details-info {
+  transform: translateX(3px);
 }
 
 .details-label {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
 }
 
 .details-value {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a.details-value:hover {
   color: var(--accent-cyan);
-  text-shadow: 0 0 5px rgba(0, 242, 254, 0.3);
+  text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
 }
 
 /* Education Timeline */
