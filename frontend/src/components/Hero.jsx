@@ -23,9 +23,9 @@ export default function Hero() {
             </p>
             <div className="hero-buttons">
               <a 
-                href="/IDUSARA CHATHUM  Cv Resume.pdf" 
+                href="/IDUSARA_CHATHUM_Cv_Resume.pdf" 
                 className="btn btn-primary" 
-                download="Idusara_Chathum_Resume.pdf"
+                download="IDUSARA_CHATHUM_Cv_Resume.pdf"
                 id="btn-download-cv"
               >
                 Download Resume
