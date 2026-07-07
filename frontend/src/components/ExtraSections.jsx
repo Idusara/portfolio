@@ -86,22 +86,6 @@ export default function ExtraSections() {
         </div>
       </section>
 
-      {/* References Section */}
-      <section className="references" id="references-section">
-        <div className="container">
-          <h2 className="section-title">References</h2>
-          <div className="references-grid">
-            <div className="reference-card">
-              <h3 className="reference-name">MR. S.M.B. Harshanath</h3>
-              <p className="reference-title">Lecturer</p>
-              <p className="reference-institute">Sri Lanka Institute of Information Technology (SLIIT), Malabe</p>
-              <p className="reference-email">
-                <strong>Email:</strong> <a href="mailto:Harshanath.s@sliit.lk">Harshanath.s@sliit.lk</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

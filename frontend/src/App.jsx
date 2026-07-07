@@ -3,50 +3,20 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import PersonalInfo from './components/PersonalInfo';
-import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
 import ExtraSections from './components/ExtraSections';
 import Contact from './components/Contact';
 import Terminal from './components/Terminal';
 import ProjectModal from './components/ProjectModal';
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-  const [preloaderPercent, setPreloaderPercent] = useState(0);
-  const [preloaderLog, setPreloaderLog] = useState('SYSTEM BOOTING...');
   const [soundEnabled, setSoundEnabled] = useState(false);
   const [terminalOpen, setTerminalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // Preloader Simulation
-  useEffect(() => {
-    let percent = 0;
-    const interval = setInterval(() => {
-      percent += Math.floor(Math.random() * 8) + 4;
-      if (percent >= 100) {
-        percent = 100;
-        clearInterval(interval);
-        setTimeout(() => setLoading(false), 500);
-      }
-      setPreloaderPercent(percent);
 
-      // Console logs based on percentage
-      if (percent < 25) {
-        setPreloaderLog('SYSTEM BOOTING...');
-      } else if (percent < 50) {
-        setPreloaderLog('LOADING CORE JAVA & WEB INTERFACES...');
-      } else if (percent < 75) {
-        setPreloaderLog('INITIALIZING KOTLIN & ANDROID COMPILES...');
-      } else if (percent < 90) {
-        setPreloaderLog('ESTABLISHING REACTIVE VIEWPORTS...');
-      } else {
-        setPreloaderLog('READY. HELLO WORLD.');
-      }
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, []);
 
   // Keyboard listener for terminal toggle (Ctrl+K or /)
   useEffect(() => {
@@ -161,7 +131,7 @@ export default function App() {
       cancelAnimationFrame(animationId);
       window.removeEventListener('resize', handleResize);
     };
-  }, [loading]);
+  }, []);
 
   const handleSoundToggle = () => {
     setSoundEnabled((prev) => {
@@ -189,25 +159,6 @@ export default function App() {
 
   return (
     <>
-      {/* Preloader */}
-      {loading && (
-        <div id="preloader">
-          <div className="preloader-content">
-            <div className="preloader-scanner"></div>
-            <div className="preloader-logo">
-              <span className="logo-txt">IDUSARA CHATHUM</span>
-            </div>
-            <div className="preloader-bar-container">
-              <div className="preloader-bar" style={{ width: `${preloaderPercent}%` }}></div>
-            </div>
-            <div className="preloader-status">
-              <span>SYSTEM BOOTING...</span>
-              <span className="preloader-percent">{preloaderPercent}%</span>
-            </div>
-            <div className="preloader-console-log">{preloaderLog}</div>
-          </div>
-        </div>
-      )}
 
       {/* Interactive Background Canvas & Blobs */}
       <canvas id="bg-canvas"></canvas>
@@ -221,19 +172,15 @@ export default function App() {
       <div id="scroll-progress"></div>
 
       {/* Navigation */}
-      <Navbar 
-        onTerminalOpen={() => setTerminalOpen(true)} 
-        soundEnabled={soundEnabled} 
-        onSoundToggle={handleSoundToggle} 
-      />
+      <Navbar />
 
       {/* Sections */}
       <Hero />
       <About />
       <PersonalInfo />
-      <Education />
       <Skills />
       <Projects onProjectSelect={(proj) => setSelectedProject(proj)} />
+      <Certifications />
       <ExtraSections />
       <Contact soundEnabled={soundEnabled} />
 

@@ -18,7 +18,7 @@ const skillCategories = [
     ]
   },
   {
-    title: 'Web Technologies',
+    title: 'Web & Backend Technologies',
     id: 'skills-cat-web',
     icon: (
       <svg className="category-icon text-glow-pink" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -30,6 +30,7 @@ const skillCategories = [
     skills: [
       { name: 'HTML5 / CSS3', level: 90, icon: '🎨', levelText: 'Expert / Semantic & Animations', glow: 'htmlcss' },
       { name: 'React.js', level: 80, icon: '⚛️', levelText: 'Advanced / SPA Architect', glow: 'react' },
+      { name: 'Spring Boot', level: 75, icon: '🍃', levelText: 'Proficient / Java Backend Framework', glow: 'spring' },
       { name: 'Node.js', level: 70, icon: '🟢', levelText: 'Proficient / REST APIs', glow: 'node' }
     ]
   },
@@ -59,7 +60,7 @@ const skillCategories = [
     ),
     skills: [
       { name: 'MySQL', level: 85, icon: '🐬', levelText: 'Advanced / Schema & Optimizations', glow: 'mysql' },
-      { name: 'Firebase', level: 75, icon: '🔥', levelText: 'Proficient / Firestore & Auth', glow: 'firebase' },
+      { name: 'MongoDB', level: 80, icon: '🍃', levelText: 'Proficient / NoSQL Database & Mongoose', glow: 'mongodb' },
       { name: 'Git & GitHub', level: 85, icon: '🐙', levelText: 'Advanced / Version Control', glow: 'git' }
     ]
   }
