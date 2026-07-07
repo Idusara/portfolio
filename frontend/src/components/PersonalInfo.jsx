@@ -98,21 +98,7 @@ export default function PersonalInfo() {
                 </div>
               </div>
 
-              {/* NIC Number */}
-              <div className="details-card">
-                <div className="details-icon-wrapper">
-                  <svg className="details-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
-                    <line x1="7" y1="8" x2="17" y2="8"></line>
-                    <line x1="7" y1="12" x2="13" y2="12"></line>
-                    <circle cx="17" cy="13" r="1.5"></circle>
-                  </svg>
-                </div>
-                <div className="details-info">
-                  <span className="details-label">NIC Number</span>
-                  <span className="details-value">200324412402</span>
-                </div>
-              </div>
+
 
 
 
